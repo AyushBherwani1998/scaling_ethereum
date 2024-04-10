@@ -23,6 +23,9 @@
 		284BE6A62BC696F10049C203 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6A52BC696F10049C203 /* MainViewModel.swift */; };
 		284BE6A92BC698C00049C203 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6A82BC698C00049C203 /* LoginView.swift */; };
 		284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6AA2BC698FD0049C203 /* HomeView.swift */; };
+		284BE6AD2BC69A8A0049C203 /* SingelFactorAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */; };
+		284BE6B02BC69AC30049C203 /* SingleFactorAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6AF2BC69AC30049C203 /* SingleFactorAuth */; };
+		284BE6B32BC69AF30049C203 /* TorusUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6B22BC69AF30049C203 /* TorusUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 		284BE6A52BC696F10049C203 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		284BE6A82BC698C00049C203 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		284BE6AA2BC698FD0049C203 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingelFactorAuthHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284BE6B32BC69AF30049C203 /* TorusUtils in Frameworks */,
+				284BE6B02BC69AC30049C203 /* SingleFactorAuth in Frameworks */,
 				284BE6972BC692490049C203 /* FirebaseAuth in Frameworks */,
 				284BE69F2BC693D40049C203 /* GoogleSignIn in Frameworks */,
 			);
@@ -156,6 +162,7 @@
 				284BE6912BC690C50049C203 /* ThresholdKeyHelper.swift */,
 				284BE6A02BC6940B0049C203 /* FirebaseHelper.swift */,
 				284BE6A22BC694E70049C203 /* Errors.swift */,
+				284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 			packageProductDependencies = (
 				284BE6962BC692490049C203 /* FirebaseAuth */,
 				284BE69E2BC693D40049C203 /* GoogleSignIn */,
+				284BE6AF2BC69AC30049C203 /* SingleFactorAuth */,
+				284BE6B22BC69AF30049C203 /* TorusUtils */,
 			);
 			productName = frontend;
 			productReference = 284BE6632BC6903A0049C203 /* frontend.app */;
@@ -273,6 +282,8 @@
 			packageReferences = (
 				284BE6952BC692490049C203 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				284BE69D2BC693D40049C203 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				284BE6AE2BC69AC30049C203 /* XCRemoteSwiftPackageReference "single-factor-auth-swift" */,
+				284BE6B12BC69AF30049C203 /* XCRemoteSwiftPackageReference "torus-utils-swift" */,
 			);
 			productRefGroup = 284BE6642BC6903A0049C203 /* Products */;
 			projectDirPath = "";
@@ -325,6 +336,7 @@
 				284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */,
 				284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */,
 				284BE6A62BC696F10049C203 /* MainViewModel.swift in Sources */,
+				284BE6AD2BC69A8A0049C203 /* SingelFactorAuthHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +686,22 @@
 				minimumVersion = 7.1.0;
 			};
 		};
+		284BE6AE2BC69AC30049C203 /* XCRemoteSwiftPackageReference "single-factor-auth-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Web3Auth/single-factor-auth-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		284BE6B12BC69AF30049C203 /* XCRemoteSwiftPackageReference "torus-utils-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/torusresearch/torus-utils-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -686,6 +714,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 284BE69D2BC693D40049C203 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		284BE6AF2BC69AC30049C203 /* SingleFactorAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 284BE6AE2BC69AC30049C203 /* XCRemoteSwiftPackageReference "single-factor-auth-swift" */;
+			productName = SingleFactorAuth;
+		};
+		284BE6B22BC69AF30049C203 /* TorusUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 284BE6B12BC69AF30049C203 /* XCRemoteSwiftPackageReference "torus-utils-swift" */;
+			productName = TorusUtils;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

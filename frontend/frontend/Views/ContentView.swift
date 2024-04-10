@@ -17,6 +17,8 @@ struct ContentView: View {
             } else {
                 LoginView(viewModel: viewModel)
             }
+        }.onAppear {
+            viewModel.initialize()
         }
     }
 }

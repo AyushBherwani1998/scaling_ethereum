@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import TorusUtils
 
 class MainViewModel: ObservableObject {
     @Published var isLoggedIn: Bool = false
@@ -14,11 +15,29 @@ class MainViewModel: ObservableObject {
     @Published var isLoaderVisible: Bool = false
     
     var alertContent: String = ""
+    private var singleFactorAuthHelper: SingleFactorAuthHelper!
+    private var torusKey: TorusKey!
+    
+    func initialize() {
+        self.singleFactorAuthHelper = SingleFactorAuthHelper.init()
+    }
     
     func login() {
         Task {
             do {
-                _ = try await FirebaseHelper.loginWithGoogle()
+                let authDataResult = try await FirebaseHelper.loginWithGoogle()
+                let idToken = try await authDataResult.user.getIDTokenResult(
+                    forcingRefresh: true
+                )
+                
+                guard let email = authDataResult.user.email else {
+                    throw RuntimeError("No Email attached for Web3Auth verification")
+                }
+                
+                self.torusKey = try await singleFactorAuthHelper.loginWithJWT(
+                    verifierId: email, idToken: idToken.token
+                )
+                
                 toogleIsLoggedIn()
             } catch let error {
                 print(error.localizedDescription)
