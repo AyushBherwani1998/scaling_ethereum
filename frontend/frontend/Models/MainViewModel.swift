@@ -16,10 +16,12 @@ class MainViewModel: ObservableObject {
     
     var alertContent: String = ""
     private var singleFactorAuthHelper: SingleFactorAuthHelper!
+    private var thresholdKeyHelper: ThresholdKeyHelper!
     private var torusKey: TorusKey!
     
     func initialize() {
         self.singleFactorAuthHelper = SingleFactorAuthHelper.init()
+        self.thresholdKeyHelper = ThresholdKeyHelper()
     }
     
     func login() {
@@ -38,7 +40,15 @@ class MainViewModel: ObservableObject {
                     verifierId: email, idToken: idToken.token
                 )
                 
+                
+                try await thresholdKeyHelper.retriveMPCAccount(
+                    torusKey: torusKey, 
+                    verifierId: email,
+                    idToken: idToken.token
+                )
+                
                 toogleIsLoggedIn()
+                print(thresholdKeyHelper.address!)
             } catch let error {
                 print(error.localizedDescription)
                 showAlertDialog(alertContent: error.localizedDescription)

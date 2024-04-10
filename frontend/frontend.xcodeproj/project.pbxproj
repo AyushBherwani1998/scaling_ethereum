@@ -26,6 +26,11 @@
 		284BE6AD2BC69A8A0049C203 /* SingelFactorAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */; };
 		284BE6B02BC69AC30049C203 /* SingleFactorAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6AF2BC69AC30049C203 /* SingleFactorAuth */; };
 		284BE6B32BC69AF30049C203 /* TorusUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6B22BC69AF30049C203 /* TorusUtils */; };
+		284BE6B62BC6A7C30049C203 /* tkey-mpc-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6B52BC6A7C30049C203 /* tkey-mpc-swift */; };
+		284BE6B92BC6A8050049C203 /* Web3SwiftMpcProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6B82BC6A8050049C203 /* Web3SwiftMpcProvider */; };
+		284BE6BC2BC6AA290049C203 /* FetchNodeDetails in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6BB2BC6AA290049C203 /* FetchNodeDetails */; };
+		284BE6BE2BC6AA290049C203 /* FndBase in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6BD2BC6AA290049C203 /* FndBase */; };
+		284BE6C02BC6AB960049C203 /* KeychainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6BF2BC6AB960049C203 /* KeychainInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,7 @@
 		284BE6A82BC698C00049C203 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		284BE6AA2BC698FD0049C203 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingelFactorAuthHelper.swift; sourceTree = "<group>"; };
+		284BE6BF2BC6AB960049C203 /* KeychainInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +79,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				284BE6B32BC69AF30049C203 /* TorusUtils in Frameworks */,
+				284BE6B92BC6A8050049C203 /* Web3SwiftMpcProvider in Frameworks */,
+				284BE6BE2BC6AA290049C203 /* FndBase in Frameworks */,
+				284BE6B62BC6A7C30049C203 /* tkey-mpc-swift in Frameworks */,
 				284BE6B02BC69AC30049C203 /* SingleFactorAuth in Frameworks */,
 				284BE6972BC692490049C203 /* FirebaseAuth in Frameworks */,
 				284BE69F2BC693D40049C203 /* GoogleSignIn in Frameworks */,
+				284BE6BC2BC6AA290049C203 /* FetchNodeDetails in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +173,7 @@
 				284BE6A02BC6940B0049C203 /* FirebaseHelper.swift */,
 				284BE6A22BC694E70049C203 /* Errors.swift */,
 				284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */,
+				284BE6BF2BC6AB960049C203 /* KeychainInterface.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -206,6 +217,10 @@
 				284BE69E2BC693D40049C203 /* GoogleSignIn */,
 				284BE6AF2BC69AC30049C203 /* SingleFactorAuth */,
 				284BE6B22BC69AF30049C203 /* TorusUtils */,
+				284BE6B52BC6A7C30049C203 /* tkey-mpc-swift */,
+				284BE6B82BC6A8050049C203 /* Web3SwiftMpcProvider */,
+				284BE6BB2BC6AA290049C203 /* FetchNodeDetails */,
+				284BE6BD2BC6AA290049C203 /* FndBase */,
 			);
 			productName = frontend;
 			productReference = 284BE6632BC6903A0049C203 /* frontend.app */;
@@ -284,6 +299,9 @@
 				284BE69D2BC693D40049C203 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				284BE6AE2BC69AC30049C203 /* XCRemoteSwiftPackageReference "single-factor-auth-swift" */,
 				284BE6B12BC69AF30049C203 /* XCRemoteSwiftPackageReference "torus-utils-swift" */,
+				284BE6B42BC6A7C30049C203 /* XCRemoteSwiftPackageReference "tkey-mpc-swift" */,
+				284BE6B72BC6A8050049C203 /* XCRemoteSwiftPackageReference "web3-swift-mpc-provider" */,
+				284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */,
 			);
 			productRefGroup = 284BE6642BC6903A0049C203 /* Products */;
 			projectDirPath = "";
@@ -333,6 +351,7 @@
 				284BE6A32BC694E70049C203 /* Errors.swift in Sources */,
 				284BE6692BC6903A0049C203 /* ContentView.swift in Sources */,
 				284BE6922BC690C50049C203 /* ThresholdKeyHelper.swift in Sources */,
+				284BE6C02BC6AB960049C203 /* KeychainInterface.swift in Sources */,
 				284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */,
 				284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */,
 				284BE6A62BC696F10049C203 /* MainViewModel.swift in Sources */,
@@ -702,6 +721,30 @@
 				minimumVersion = 8.0.1;
 			};
 		};
+		284BE6B42BC6A7C30049C203 /* XCRemoteSwiftPackageReference "tkey-mpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tkey/tkey-mpc-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		284BE6B72BC6A8050049C203 /* XCRemoteSwiftPackageReference "web3-swift-mpc-provider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tkey/web3-swift-mpc-provider";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+		284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/torusresearch/fetch-node-details-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -724,6 +767,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 284BE6B12BC69AF30049C203 /* XCRemoteSwiftPackageReference "torus-utils-swift" */;
 			productName = TorusUtils;
+		};
+		284BE6B52BC6A7C30049C203 /* tkey-mpc-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 284BE6B42BC6A7C30049C203 /* XCRemoteSwiftPackageReference "tkey-mpc-swift" */;
+			productName = "tkey-mpc-swift";
+		};
+		284BE6B82BC6A8050049C203 /* Web3SwiftMpcProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 284BE6B72BC6A8050049C203 /* XCRemoteSwiftPackageReference "web3-swift-mpc-provider" */;
+			productName = Web3SwiftMpcProvider;
+		};
+		284BE6BB2BC6AA290049C203 /* FetchNodeDetails */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */;
+			productName = FetchNodeDetails;
+		};
+		284BE6BD2BC6AA290049C203 /* FndBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */;
+			productName = FndBase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
