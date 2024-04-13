@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2ECE0946-2E44-4265-9453-7DE3247B7746"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "234F7F96-23F4-40C0-8BDA-270E2DEC3B0F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "frontend/Models/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2F0C32E-2867-435B-BAF4-3CC098677258"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "frontend/Models/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "frontend/Models/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - 6253b8dd8f052048"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "956">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - 7a2fbac96e7f7109"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(16) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - f79ceb4e17211608"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(17) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - 730dd9cedcebbb0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(18) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - c8fd164f85d2580a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(19) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "772">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - 1d45050c75f84102"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(20) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - 9932738d32a2e60d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(21) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "C27426BF-5848-46CF-9DD1-BD7FD879694E - 16a3a00df8648b0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(22) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "452">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "init(signer:rpcUrl:chainId:bundleRpcUrl:entryPoint:factory:salt:senderAddress:paymasterMiddleware:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - 7febfe5befdbbba5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "2908">
+               </Location>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - ec33a93a109544d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) await resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - c35fbf51316077a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - f5d6c05df9699aea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - f5d6c05df969985f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - 9a12424f8adfce53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, chainId: BigInt.BigUInt, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "29D5E698-1B5B-408E-B1F7-2A28254C0694 - c35fbf51316077a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for userop_swift.SimpleAccountBuilder.init(signer: userop_swift.Signer, rpcUrl: Foundation.URL, bundleRpcUrl: Swift.Optional&lt;Foundation.URL&gt;, entryPoint: Web3Core.EthereumAddress, factory: Web3Core.EthereumAddress, salt: Swift.Optional&lt;BigInt.BigInt&gt;, senderAddress: Swift.Optional&lt;Web3Core.EthereumAddress&gt;, paymasterMiddleware: Swift.Optional&lt;userop_swift.UserOperationMiddleware&gt;) async throws -&gt; userop_swift.SimpleAccountBuilder"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "328">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E6991CA-D3D9-47F2-8077-F2F9428A3651"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/UserOperation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "build(entryPoint:chainId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1E6991CA-D3D9-47F2-8077-F2F9428A3651 - 17a8a58f153ca11b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for userop_swift.UserOperationBuilder.build(entryPoint: Web3Core.EthereumAddress, chainId: BigInt.BigUInt) async throws -&gt; userop_swift.UserOperation"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/UserOperation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "772">
+               </Location>
+               <Location
+                  uuid = "1E6991CA-D3D9-47F2-8077-F2F9428A3651 - 80561f2bab05e519"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for userop_swift.UserOperationBuilder.build(entryPoint: Web3Core.EthereumAddress, chainId: BigInt.BigUInt) async throws -&gt; userop_swift.UserOperation"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/UserOperation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "416">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D909DA9-C977-40A4-A482-36646A4842EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "method(_:parameters:extraData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D909DA9-C977-40A4-A482-36646A4842EC - 8537fda2538e7f39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Web3Core.DefaultContractProtocol.method(_: Swift.String, parameters: Swift.Array&lt;Any&gt;, extraData: Swift.Optional&lt;Foundation.Data&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "1D909DA9-C977-40A4-A482-36646A4842EC - dd5bb988eda32088"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Web3Core.ABI.Element.Function) -&gt; Swift.Bool in Web3Core.DefaultContractProtocol.method(_: Swift.String, parameters: Swift.Array&lt;Any&gt;, extraData: Swift.Optional&lt;Foundation.Data&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0CAA480-934F-4C5B-ABF1-4A78D4A97F32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "method(_:parameters:extraData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A0CAA480-934F-4C5B-ABF1-4A78D4A97F32 - 8537fda2538e7f16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Web3Core.DefaultContractProtocol.method(_: Swift.String, parameters: Swift.Array&lt;Any&gt;, extraData: Swift.Optional&lt;Foundation.Data&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "1320">
+               </Location>
+               <Location
+                  uuid = "A0CAA480-934F-4C5B-ABF1-4A78D4A97F32 - 8537fda2538e7f16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Web3Core.DefaultContractProtocol.method(_: Swift.String, parameters: Swift.Array&lt;Any&gt;, extraData: Swift.Optional&lt;Foundation.Data&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "1704">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D36B1215-31F3-4B91-918D-AAF76F2F3B76"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIElements.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "encodeParameters(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9AAC773-1F20-4109-B59D-7BB79B273B08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/UserOperationMiddlewareContext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getUserOpHash()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26188329-7B88-4C2F-90FA-7185685150EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/UserOperationMiddlewareContext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init(op:entryPoint:chainId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E79A5DA3-29E4-40BF-BF5F-BFB5B8CC2C4B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "process(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A780CE21-E371-453B-A7FC-29C9F132DD9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35A9734C-C2FA-444C-A552-AB57C44F8947"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66">
+            <Locations>
+               <Location
+                  uuid = "35A9734C-C2FA-444C-A552-AB57C44F8947 - 6625c8502a7b3c60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "35A9734C-C2FA-444C-A552-AB57C44F8947 - a7da5b7c23a06270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "35A9734C-C2FA-444C-A552-AB57C44F8947 - 9a9aeb738655f066"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "35A9734C-C2FA-444C-A552-AB57C44F8947 - f0a91d83d4415665"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "35A9734C-C2FA-444C-A552-AB57C44F8947 - f0a91d83d4415665"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F38A722-2CB1-45F1-9B2B-6FDDF3602F29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2667B18-0E7A-4A89-8F3A-E81D2BA05E87"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "sendUserOperation(builder:onBuild:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - fb7a46db83c8d37e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - 280d770ab277a042"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - 12c814088ce01778"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - 5e6702e71177b579"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - fb7a46db83c8d359"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - 280d770ab277a065"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - 12c814088ce0175f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "579B23D0-0FFD-428A-BC3E-7FAC5B7B9C7A - 5e6702e71177b55e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for userop_swift.Client.sendUserOperation(builder: userop_swift.IUserOperationBuilder, onBuild: Swift.Optional&lt;(userop_swift.UserOperation) -&gt; ()&gt;) async throws -&gt; userop_swift.SendUserOperationResponse"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/context/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "process(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB - 6625c8502a7b3e1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB - a7da5b7c23a0600c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB - 9a9aeb738655f21a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB - f0a91d83d4415419"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB - f0a91d83d4415419"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for userop_swift.GasEstimateMiddleware.process(inout userop_swift.UserOperationMiddlewareContext) async throws -&gt; ()"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "3BEA3812-65D3-4B21-AD2F-28574084E9CB - 653caf82899e66b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userop_swift.GasEstimate.init(from: Swift.Decoder) throws -&gt; userop_swift.GasEstimate"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "4112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD68427C-A2B3-4721-9C11-D0F84AECF3B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "process(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89FEBB2A-A4B7-4409-BC29-9217247539F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "process(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "996B052B-E78F-4996-948F-00DCEE18F673"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/preset/SimpleAccountBuilder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "init(signer:rpcUrl:chainId:bundleRpcUrl:entryPoint:factory:salt:senderAddress:paymasterMiddleware:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59D3E5A7-BEAA-4B61-A45F-1AF184B43F59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumNetwork/Request/APIRequest+Methods.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "send(_:parameter:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE5F5135-B498-463E-9458-FD7C24028D97"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumNetwork/Request/APIRequest+Methods.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "send(_:parameter:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93EAB758-E7DE-4A52-84D2-C9808E37FC7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumNetwork/Request/APIRequest+Methods.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "send(_:parameter:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34CB8B04-F184-4197-B367-F168B76B7719"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/userop-swift/Sources/userop-swift/middleware/GasEstimateMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "process(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "659CF8EA-339E-4C0A-85A8-AB656A9DAAED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "frontend/Helpers/MPCSigner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "signMessage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57AACE48-D5AF-4578-B965-79B5FD59E56A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "frontend/Helpers/MPCSigner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "signMessage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26D53314-B721-47B7-85D7-4C319FC85438"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "method(_:parameters:extraData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "26D53314-B721-47B7-85D7-4C319FC85438 - 8537fda2538e7fb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Web3Core.DefaultContractProtocol.method(_: Swift.String, parameters: Swift.Array&lt;Any&gt;, extraData: Swift.Optional&lt;Foundation.Data&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "279"
+                  endingLineNumber = "279"
+                  offsetFromSymbolStart = "1428">
+               </Location>
+               <Location
+                  uuid = "26D53314-B721-47B7-85D7-4C319FC85438 - 8537fda2538e7fb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Web3Core.DefaultContractProtocol.method(_: Swift.String, parameters: Swift.Array&lt;Any&gt;, extraData: Swift.Optional&lt;Foundation.Data&gt;) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/Contract/ContractProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "279"
+                  endingLineNumber = "279"
+                  offsetFromSymbolStart = "1512">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8CC42611-4ABE-4261-8424-FA9E525D1A7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "encode(types:values:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EF04B89-52B8-4887-A985-14221FB2C859"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "encode(types:values:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4F33B09-3029-41F7-92AD-F2A783A6167A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "encodeSingleType(type:value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "094ECCD8-3EBB-4AE7-B3F6-159341702976"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "encode(types:values:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF5A213D-71B4-4349-922C-BC6BA5DE8DBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "encodeSingleType(type:value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0750DD47-B339-4BCF-A60E-4667ABDA56BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
+            landmarkName = "encodeSingleType(type:value:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0750DD47-B339-4BCF-A60E-4667ABDA56BE - df0dcabde4f3c3a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Web3Core.ABIEncoder.encodeSingleType(type: Web3Core.ABI.Element.ParameterType, value: Any) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "16096">
+               </Location>
+               <Location
+                  uuid = "0750DD47-B339-4BCF-A60E-4667ABDA56BE - df0dcabde4f3c3a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Web3Core.ABIEncoder.encodeSingleType(type: Web3Core.ABI.Element.ParameterType, value: Any) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "Spec265KDep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "16476">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DB11756-A344-4513-B9D0-93684DA1E509"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "encodeSingleType(type:value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEEECF6F-9F09-499B-B6C4-4C9E944E010B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../Library/Developer/Xcode/DerivedData/frontend-enyklbzjtckmsvedcbqtibrxgtxy/SourcePackages/checkouts/web3swift/Sources/Web3Core/EthereumABI/ABIEncoding.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
+            landmarkName = "encodeSingleType(type:value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

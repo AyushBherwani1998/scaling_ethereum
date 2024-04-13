@@ -18,7 +18,9 @@ class MainViewModel: ObservableObject {
     @Published var isLoaderVisible: Bool = false
     
     var alertContent: String = ""
-    var simpleAccountBuilder: SimpleAccountBuilder!
+    var erc4337Helper: ERC4337Helper!
+    var attestationHelper: AttestationHelper!
+    
     private var singleFactorAuthHelper: SingleFactorAuthHelper!
     private var thresholdKeyHelper: ThresholdKeyHelper!
     private var torusKey: TorusKey!
@@ -51,7 +53,7 @@ class MainViewModel: ObservableObject {
                     idToken: idToken.token
                 )
                 
-                let erc4337Helper = ERC4337Helper.init(
+                self.erc4337Helper = ERC4337Helper.init(
                     privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!,
                     ethereumTssAccount: thresholdKeyHelper.ethereumAccount,
                     tssUncompressedPublicKey: thresholdKeyHelper.publicKey,
@@ -60,15 +62,11 @@ class MainViewModel: ObservableObject {
                 )
                 
                 try await erc4337Helper.initialize()
-               
                 
-                let hash = try await erc4337Helper.transferEth(
-                    to: "0xcc89B59D28A2d63fD9134f9d843547942747b40f",
-                    value: "0.001"
-                )
                 
-                print(hash)
-                
+                self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper)
+                try await attestationHelper.initialize()
+    
                 toogleIsLoggedIn()
             } catch let error {
                 print(error.localizedDescription)

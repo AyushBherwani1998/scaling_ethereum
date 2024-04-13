@@ -11,6 +11,8 @@
 		282E582B2BCA563100FF1DD9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E582A2BCA563100FF1DD9 /* Extension.swift */; };
 		282E582E2BCA746400FF1DD9 /* userop-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 282E582D2BCA746400FF1DD9 /* userop-swift */; };
 		282E58302BCA76A300FF1DD9 /* ERC4337Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E582F2BCA76A300FF1DD9 /* ERC4337Helper.swift */; };
+		282E58322BCA936300FF1DD9 /* AttestationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E58312BCA936300FF1DD9 /* AttestationHelper.swift */; };
+		282E58352BCA94FA00FF1DD9 /* ABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E58342BCA94FA00FF1DD9 /* ABI.swift */; };
 		284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6662BC6903A0049C203 /* frontendApp.swift */; };
 		284BE6692BC6903A0049C203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6682BC6903A0049C203 /* ContentView.swift */; };
 		284BE66B2BC6903C0049C203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284BE66A2BC6903C0049C203 /* Assets.xcassets */; };
@@ -81,6 +83,8 @@
 /* Begin PBXFileReference section */
 		282E582A2BCA563100FF1DD9 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		282E582F2BCA76A300FF1DD9 /* ERC4337Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERC4337Helper.swift; sourceTree = "<group>"; };
+		282E58312BCA936300FF1DD9 /* AttestationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationHelper.swift; sourceTree = "<group>"; };
+		282E58342BCA94FA00FF1DD9 /* ABI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABI.swift; sourceTree = "<group>"; };
 		284BE6632BC6903A0049C203 /* frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284BE6662BC6903A0049C203 /* frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendApp.swift; sourceTree = "<group>"; };
 		284BE6682BC6903A0049C203 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 				28C2DB072BC80B330096710A /* MPCSigner.swift */,
 				282E582A2BCA563100FF1DD9 /* Extension.swift */,
 				282E582F2BCA76A300FF1DD9 /* ERC4337Helper.swift */,
+				282E58312BCA936300FF1DD9 /* AttestationHelper.swift */,
+				282E58342BCA94FA00FF1DD9 /* ABI.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -459,10 +465,12 @@
 				284BE6A92BC698C00049C203 /* LoginView.swift in Sources */,
 				282E58302BCA76A300FF1DD9 /* ERC4337Helper.swift in Sources */,
 				284BE6A32BC694E70049C203 /* Errors.swift in Sources */,
+				282E58352BCA94FA00FF1DD9 /* ABI.swift in Sources */,
 				282E582B2BCA563100FF1DD9 /* Extension.swift in Sources */,
 				284BE6692BC6903A0049C203 /* ContentView.swift in Sources */,
 				28C2DB082BC80B330096710A /* MPCSigner.swift in Sources */,
 				284BE6922BC690C50049C203 /* ThresholdKeyHelper.swift in Sources */,
+				282E58322BCA936300FF1DD9 /* AttestationHelper.swift in Sources */,
 				284BE6C02BC6AB960049C203 /* KeychainInterface.swift in Sources */,
 				284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */,
 				284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */,

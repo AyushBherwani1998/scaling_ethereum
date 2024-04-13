@@ -86,7 +86,18 @@ class ERC4337Helper {
         return try await sendUserOP()
     }
     
-    private func sendUserOP() async throws -> String {
+    func writeSmartContract(to: String, _ data: Data, value: String = "0") async throws -> String {
+        let valueInWei = try TorusWeb3Utils.toWei(ether: value)
+        try await account.execute(
+            to: EthereumAddress(Data(hex: to))!,
+            value: BigUInt.init(stringLiteral: valueInWei.hexString),
+            data: data
+        )
+        
+        return try await sendUserOP()
+    }
+    
+     private func sendUserOP() async throws -> String {
         let response = try await client.sendUserOperation(builder: account)
         let eventLog = try await response.wait()
         return eventLog!.transactionHash.hexString
