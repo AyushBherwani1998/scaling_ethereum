@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 import TorusUtils
+import userop_swift
+import Web3Core
+import tkey_mpc_swift
 
 class MainViewModel: ObservableObject {
     @Published var isLoggedIn: Bool = false
@@ -15,6 +18,7 @@ class MainViewModel: ObservableObject {
     @Published var isLoaderVisible: Bool = false
     
     var alertContent: String = ""
+    var simpleAccountBuilder: SimpleAccountBuilder!
     private var singleFactorAuthHelper: SingleFactorAuthHelper!
     private var thresholdKeyHelper: ThresholdKeyHelper!
     private var torusKey: TorusKey!
@@ -42,13 +46,30 @@ class MainViewModel: ObservableObject {
                 
                 
                 try await thresholdKeyHelper.retriveMPCAccount(
-                    torusKey: torusKey, 
+                    torusKey: torusKey,
                     verifierId: email,
                     idToken: idToken.token
                 )
                 
+                let erc4337Helper = ERC4337Helper.init(
+                    privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!,
+                    ethereumTssAccount: thresholdKeyHelper.ethereumAccount,
+                    tssUncompressedPublicKey: thresholdKeyHelper.publicKey,
+                    isUsingTssSignature: false,
+                    isAccountCreated: true
+                )
+                
+                try await erc4337Helper.initialize()
+               
+                
+                let hash = try await erc4337Helper.transferEth(
+                    to: "0xcc89B59D28A2d63fD9134f9d843547942747b40f",
+                    value: "0.001"
+                )
+                
+                print(hash)
+                
                 toogleIsLoggedIn()
-                print(thresholdKeyHelper.address!)
             } catch let error {
                 print(error.localizedDescription)
                 showAlertDialog(alertContent: error.localizedDescription)

@@ -8,9 +8,9 @@
 import Foundation
 import TorusUtils
 import tkey_mpc_swift
-import Web3SwiftMpcProvider
 import CommonSources
 import FetchNodeDetails
+import Web3SwiftMpcProvider
 
 class ThresholdKeyHelper {
     var verifier: String!
@@ -27,6 +27,7 @@ class ThresholdKeyHelper {
     var address: String!
     var ethereumAccount: EthereumTssAccount!
     var activeFactor: String!
+    var publicKey: String!
     
     func retriveMPCAccount(torusKey: TorusKey, verifierId: String, idToken: String) async throws {
         do {
@@ -266,10 +267,6 @@ class ThresholdKeyHelper {
         
         let keyPoint = try KeyPoint(address: tssPublicKey)
         
-        address = try keyPoint.getPublicKey(
-            format: .FullAddress
-        )
-        
         let nonce = try TssModule.get_tss_nonce(
             threshold_key: thresholdKey, tss_tag: tag
         )
@@ -296,10 +293,10 @@ class ThresholdKeyHelper {
             ), as: UTF8.self)
         }
         
-        let fullAddress = try keyPoint.getPublicKey(format: .FullAddress)
+        self.publicKey = try keyPoint.getPublicKey(format: .FullAddress)
         
         let ethTssAccountParams = EthTssAccountParams(
-            publicKey: fullAddress,
+            publicKey: publicKey,
             factorKey: factorKey,
             tssNonce: nonce,
             tssShare: tssShare,

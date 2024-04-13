@@ -201,7 +201,7 @@
     {
       "identity" : "secp256k1.swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/GigaBitcoin/secp256k1.swift.git",
+      "location" : "https://github.com/GigaBitcoin/secp256k1.swift",
       "state" : {
         "revision" : "347b84ed2aad2305a7233f2a48d76f41e52062a1",
         "version" : "0.16.0"
@@ -370,6 +370,15 @@
       }
     },
     {
+      "identity" : "userop-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mozsquad/userop-swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b6ddb335e963b363b03d752df2db6415d9aee5c8"
+      }
+    },
+    {
       "identity" : "web3-swift-mpc-provider",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tkey/web3-swift-mpc-provider",
@@ -385,6 +394,15 @@
       "state" : {
         "revision" : "1e75f98a5738c470b23bbfffa9314e9f788df76b",
         "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "web3swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AyushBherwani1998/web3swift.git",
+      "state" : {
+        "branch" : "userop",
+        "revision" : "507e8d460ed2327d90b5d644c175f3f9ab4ae679"
       }
     },
     {

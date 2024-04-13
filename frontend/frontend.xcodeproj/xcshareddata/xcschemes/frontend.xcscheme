@@ -51,6 +51,17 @@
                ReferencedContainer = "container:frontend.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "28C2DB1A2BC81A310096710A"
+               BuildableName = "Spec256kDepTests.xctest"
+               BlueprintName = "Spec256kDepTests"
+               ReferencedContainer = "container:frontend.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -77,6 +88,11 @@
          <EnvironmentVariable
             key = "web3AuthId"
             value = "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "alchmeyKey"
+            value = "jaeDAm9HMBugUx367S6fBwhdOj_7O4-2"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
