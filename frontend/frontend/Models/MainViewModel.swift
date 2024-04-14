@@ -24,6 +24,7 @@ class MainViewModel: ObservableObject {
     private var singleFactorAuthHelper: SingleFactorAuthHelper!
     private var thresholdKeyHelper: ThresholdKeyHelper!
     private var torusKey: TorusKey!
+    private var oAuthSigner: Signer!
     
     func initialize() {
         self.singleFactorAuthHelper = SingleFactorAuthHelper.init()
@@ -52,6 +53,8 @@ class MainViewModel: ObservableObject {
                     verifierId: email,
                     idToken: idToken.token
                 )
+                
+                self.oAuthSigner = SimpleSigner(privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!)
                 
                 self.erc4337Helper = ERC4337Helper.init(
                     privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!,

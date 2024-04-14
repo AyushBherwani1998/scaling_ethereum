@@ -26,10 +26,13 @@ extension String: EthereumSingleKeyStorageProtocol {
 
 extension String {
     public static func sign(data: Data, key: String) throws -> Data {
-
-        let signature = try EthereumAccount(
+        let account = try EthereumAccount(
             keyStorage: key as EthereumSingleKeyStorageProtocol
-        ).signMessage(message: data)
+        )
+        
+       
+
+        let signature = try account.signMessage(message: data)
         
         return signature.web3.hexData!
     }

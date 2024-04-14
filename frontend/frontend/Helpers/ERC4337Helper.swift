@@ -10,6 +10,7 @@ import userop_swift
 import Web3SwiftMpcProvider
 import Web3Core
 import BigInt
+import web3swift
 
 class ERC4337Helper {
     var account: SimpleAccountBuilder!
@@ -90,7 +91,7 @@ class ERC4337Helper {
         let valueInWei = try TorusWeb3Utils.toWei(ether: value)
         try await account.execute(
             to: EthereumAddress(Data(hex: to))!,
-            value: BigUInt.init(stringLiteral: valueInWei.hexString),
+            value: BigUInt.init(stringLiteral: valueInWei.description),
             data: data
         )
         
