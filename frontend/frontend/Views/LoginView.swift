@@ -11,15 +11,25 @@ struct LoginView: View {
     @StateObject var viewModel: MainViewModel
     
     var body: some View {
-        VStack(spacing: 16) {
+        VStack{
             Spacer()
-            Text("ERC 4337 Wallet").font(.title).multilineTextAlignment(.center)
-            Button(action: {
-                viewModel.login()
-            }, label: {
-                Text("Sign in with Google")
-            }).buttonStyle(.bordered)
+            Image("sage-logo")
             Spacer()
+            
+            
+            Button {
+                viewModel.login() 
+            } label: {
+                Text("Login with Google")
+                    .frame(maxWidth: .infinity)
+                    .fontWeight(.semibold)
+                    .padding(2)
+            }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            
         }
+        .padding()
     }
 }
+
