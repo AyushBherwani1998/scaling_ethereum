@@ -30,10 +30,17 @@ extension String {
             keyStorage: key as EthereumSingleKeyStorageProtocol
         )
         
-       
-
+        
+        
         let signature = try account.signMessage(message: data)
         
         return signature.web3.hexData!
+    }
+    
+    public static func addressAbbreivation(address: String) -> String {
+        let result = address.split(separator: "")
+        let suffixAddress=result[38]+result[39]+result[40]+result[41]
+        let prefixAddress=result[0]+result[1]+result[2]+result[3]
+        return prefixAddress + "..." + suffixAddress
     }
 }

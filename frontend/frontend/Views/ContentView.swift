@@ -14,6 +14,8 @@ struct ContentView: View {
         NavigationView {
             if(viewModel.isLoggedIn) {
                 HomView(viewModel: viewModel)
+            } else if(viewModel.isRecoveryRequired) {
+                RecoveryView(viewModel: viewModel)
             } else {
                 LoginView(viewModel: viewModel)
             }

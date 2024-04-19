@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct RecoveryView: View {
+    @StateObject var viewModel: MainViewModel
+    @State var attestation: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section(
+                    header: Text("MPC Account Recovery")
+                ) {
+                    TextField(
+                        "Please enter your attestation number",
+                        text: $attestation
+                    )
+                    
+                    Button(
+                        action: {
+                            viewModel.claimAccount(salt: attestation)
+                        }, label: {
+                            Text("Claim Account")
+                        }
+                    )
+                }
+            }
+        }
+        
     }
-}
-
-#Preview {
-    RecoveryView()
 }

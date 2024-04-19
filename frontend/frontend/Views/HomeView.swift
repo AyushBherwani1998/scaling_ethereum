@@ -25,14 +25,17 @@ struct HomView: View {
                     .frame(width: 88, height: 49)
                     .padding(.bottom, 24)
                 VStack{
-                    Text(prefixAddress+"..."+suffixAddress)
-                        .padding(.bottom, 4)
-                        .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-                    
-                    
                     Text(viewModel.balance.description + " ETH")
                         .font(.system(size:44))
                         .fontWeight(.semibold)
+                    
+                    Text(String.addressAbbreivation(
+                        address: viewModel.erc4337Helper.address
+                    ))
+                    .padding(.bottom, 4).font(Font.title)
+                    
+                    
+                  
                     
                 }
                 

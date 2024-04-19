@@ -17,6 +17,7 @@ class MainViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var isLoaderVisible: Bool = false
     @Published var isAccountReady: Bool = false
+    @Published var isRecoveryRequired: Bool = false
     
     var alertContent: String = ""
     var balance: Decimal = 0
@@ -53,31 +54,68 @@ class MainViewModel: ObservableObject {
                     verifierId: email, idToken: idToken.token
                 )
                 
-                
-                try await thresholdKeyHelper.retriveMPCAccount(
-                    torusKey: torusKey,
-                    verifierId: email,
-                    idToken: idToken.token
-                )
-                
                 self.oAuthSigner = SimpleSigner(privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!)
                 
-                self.erc4337Helper = ERC4337Helper.init(
-                    privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!,
-                    ethereumTssAccount: thresholdKeyHelper.ethereumAccount,
-                    tssUncompressedPublicKey: thresholdKeyHelper.publicKey,
-                    isUsingTssSignature: false,
-                    isAccountCreated: true
+                
+                do {
+                    try await thresholdKeyHelper.retriveMPCAccount(
+                        torusKey: torusKey,
+                        verifierId: email,
+                        idToken: idToken.token
+                    )
+                    
+                    try await processLogin()
+                } catch {
+                    DispatchQueue.main.async {
+                        self.isRecoveryRequired = self.thresholdKeyHelper.requiredShares > 0
+                    }
+                }
+               
+            } catch let error {
+                print(error.localizedDescription)
+                showAlertDialog(alertContent: error.localizedDescription)
+            }
+        }
+    }
+    
+    private func processLogin() async throws {
+        self.erc4337Helper = ERC4337Helper.init(
+            privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!,
+            ethereumTssAccount: thresholdKeyHelper.ethereumAccount,
+            tssUncompressedPublicKey: thresholdKeyHelper.publicKey,
+            isUsingTssSignature: false,
+            isAccountCreated: true
+        )
+        
+        
+        try await erc4337Helper.initialize()
+        
+        self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper, thresholdKeyHelper: thresholdKeyHelper)
+        try await attestationHelper.initialize()
+        try await chainHelper.setUp()
+        
+        toogleIsLoggedIn()
+        loadAccount()
+    }
+    
+    func claimAccount(salt: String) {
+        Task {
+            do {
+                guard let saltInt: UInt = UInt(salt) else {
+                    throw "Invalid salt"
+                }
+                
+                self.attestationHelper = AttestationHelper(
+                    schemaId: "0xe", 
+                    erc4337Helper: nil,
+                    thresholdKeyHelper: thresholdKeyHelper
                 )
                 
-                try await erc4337Helper.initialize()
-                
-                
-                self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper, thresholdKeyHelper: thresholdKeyHelper)
                 try await attestationHelper.initialize()
-                try await chainHelper.setUp()
-                toogleIsLoggedIn()
-                loadAccount()
+                
+                try await attestationHelper.claimMPCAccount(signer: oAuthSigner, salt: saltInt)
+                try await processLogin()
+                
             } catch let error {
                 print(error.localizedDescription)
                 showAlertDialog(alertContent: error.localizedDescription)
@@ -93,10 +131,12 @@ class MainViewModel: ObservableObject {
                     address: erc4337Helper.address
                 )
                 
+                
                 DispatchQueue.main.async {
                     self.balance = balance
                     self.transactions = tranasctions
                     self.isAccountReady.toggle()
+                    self.isRecoveryRequired = self.thresholdKeyHelper.requiredShares > 0
                 }
             } catch let error {
                 print(error.localizedDescription)

@@ -15,10 +15,10 @@ import web3swift
 class AttestationHelper {
     let schemaId: String
     var ispContract: EthereumContract!
-    var erc4337Helper: ERC4337Helper
+    var erc4337Helper: ERC4337Helper?
     var thresholdKeyHelper: ThresholdKeyHelper
     
-    init(schemaId: String, erc4337Helper: ERC4337Helper, thresholdKeyHelper: ThresholdKeyHelper) {
+    init(schemaId: String, erc4337Helper: ERC4337Helper?, thresholdKeyHelper: ThresholdKeyHelper) {
         self.schemaId = schemaId
         self.erc4337Helper = erc4337Helper
         self.thresholdKeyHelper = thresholdKeyHelper
@@ -44,10 +44,12 @@ class AttestationHelper {
         }
         
         
-        let hash = try await erc4337Helper.writeSmartContract(
+        guard let hash = try await erc4337Helper?.writeSmartContract(
             to: "0xa448B7Cefcff60B835126306858F65C14a3a691D",
             data
-        )
+        ) else {
+            throw "ERC4337 Account not found"
+        }
         
         try await thresholdKeyHelper.createAttestationFactor(salt: 12)
         return hash

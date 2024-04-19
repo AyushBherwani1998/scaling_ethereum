@@ -13,6 +13,7 @@
 		282E58302BCA76A300FF1DD9 /* ERC4337Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E582F2BCA76A300FF1DD9 /* ERC4337Helper.swift */; };
 		282E58322BCA936300FF1DD9 /* AttestationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E58312BCA936300FF1DD9 /* AttestationHelper.swift */; };
 		282E58352BCA94FA00FF1DD9 /* ABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E58342BCA94FA00FF1DD9 /* ABI.swift */; };
+		2833BEAF2BD2790500243B09 /* RecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833BEAE2BD2790500243B09 /* RecoveryView.swift */; };
 		284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6662BC6903A0049C203 /* frontendApp.swift */; };
 		284BE6692BC6903A0049C203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6682BC6903A0049C203 /* ContentView.swift */; };
 		284BE66B2BC6903C0049C203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284BE66A2BC6903C0049C203 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		282E582F2BCA76A300FF1DD9 /* ERC4337Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERC4337Helper.swift; sourceTree = "<group>"; };
 		282E58312BCA936300FF1DD9 /* AttestationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationHelper.swift; sourceTree = "<group>"; };
 		282E58342BCA94FA00FF1DD9 /* ABI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABI.swift; sourceTree = "<group>"; };
+		2833BEAE2BD2790500243B09 /* RecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryView.swift; sourceTree = "<group>"; };
 		284BE6632BC6903A0049C203 /* frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284BE6662BC6903A0049C203 /* frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendApp.swift; sourceTree = "<group>"; };
 		284BE6682BC6903A0049C203 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				284BE6A82BC698C00049C203 /* LoginView.swift */,
 				74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */,
 				284BE6AA2BC698FD0049C203 /* HomeView.swift */,
+				2833BEAE2BD2790500243B09 /* RecoveryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				284BE6C02BC6AB960049C203 /* KeychainInterface.swift in Sources */,
 				284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */,
 				284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */,
+				2833BEAF2BD2790500243B09 /* RecoveryView.swift in Sources */,
 				284BE6A62BC696F10049C203 /* MainViewModel.swift in Sources */,
 				284BE6AD2BC69A8A0049C203 /* SingelFactorAuthHelper.swift in Sources */,
 			);
