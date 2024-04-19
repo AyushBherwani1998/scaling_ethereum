@@ -92,8 +92,10 @@ class MainViewModel: ObservableObject {
                 let tranasctions = try await chainHelper.getTransactionHistory(
                     address: erc4337Helper.address
                 )
+                
                 DispatchQueue.main.async {
                     self.balance = balance
+                    self.transactions = tranasctions
                     self.isAccountReady.toggle()
                 }
             } catch let error {
