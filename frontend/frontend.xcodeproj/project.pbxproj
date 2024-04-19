@@ -43,6 +43,7 @@
 		28C2DB3B2BC81AC20096710A /* Spec265KDep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2DB352BC81AC20096710A /* Spec265KDep.framework */; };
 		28C2DB3C2BC81AC20096710A /* Spec265KDep.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2DB352BC81AC20096710A /* Spec265KDep.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74D2F0AA2BCEEC3400B4C17B /* PassKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */; };
+		74D2F0B12BD2D64100B4C17B /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0B02BD2D64100B4C17B /* SendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		28C2DB352BC81AC20096710A /* Spec265KDep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spec265KDep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C2DB372BC81AC20096710A /* Spec265KDep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spec265KDep.h; sourceTree = "<group>"; };
 		74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassKeyView.swift; sourceTree = "<group>"; };
+		74D2F0B02BD2D64100B4C17B /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */,
 				284BE6AA2BC698FD0049C203 /* HomeView.swift */,
 				2833BEAE2BD2790500243B09 /* RecoveryView.swift */,
+				74D2F0B02BD2D64100B4C17B /* SendView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				282E58352BCA94FA00FF1DD9 /* ABI.swift in Sources */,
 				282E582B2BCA563100FF1DD9 /* Extension.swift in Sources */,
 				284BE6692BC6903A0049C203 /* ContentView.swift in Sources */,
+				74D2F0B12BD2D64100B4C17B /* SendView.swift in Sources */,
 				74D2F0AA2BCEEC3400B4C17B /* PassKeyView.swift in Sources */,
 				28C2DB082BC80B330096710A /* MPCSigner.swift in Sources */,
 				284BE6922BC690C50049C203 /* ThresholdKeyHelper.swift in Sources */,

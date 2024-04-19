@@ -124,6 +124,7 @@ struct HomView: View {
                     }
                     .padding()
                 }
+                .frame(alignment: .top)
                 
                 Text("Recent Transactions")
                     .padding(.top, 24)
