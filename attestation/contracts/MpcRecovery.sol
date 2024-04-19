@@ -28,14 +28,21 @@ contract MpcRecovery is Ownable {
         bytes32 _message,
         bytes memory _signature,
         address _owner
-    ) public view returns (bool) {
+    ) public view returns (Attestation memory) {
         bytes32 hash = MessageHashUtils.toEthSignedMessageHash(_message);
         address signer = ECDSA.recover(hash, _signature);
+       
         if (signer != _owner) {
             revert("Signature does not match message sender");
         }
 
-        return mpcAccountAttestations[_owner] != 0;
+        uint64 attestationId = mpcAccountAttestations[_owner];
+
+        if(attestationId == 0) {
+            revert("No attestation found");
+        }
+        
+        return spInstance.getAttestation(attestationId);
     }
 
     function attestMPCAccount(address recipient, bytes memory data) external {
