@@ -16,8 +16,11 @@ class MainViewModel: ObservableObject {
     @Published var isLoggedIn: Bool = false
     @Published var showAlert: Bool = false
     @Published var isLoaderVisible: Bool = false
+    @Published var isAccountReady: Bool = false
     
     var alertContent: String = ""
+    var balance: Decimal = 0
+    
     var erc4337Helper: ERC4337Helper!
     var attestationHelper: AttestationHelper!
     
@@ -25,10 +28,12 @@ class MainViewModel: ObservableObject {
     private var thresholdKeyHelper: ThresholdKeyHelper!
     private var torusKey: TorusKey!
     private var oAuthSigner: Signer!
+    private var chainHelper: ChainHelper!
     
     func initialize() {
         self.singleFactorAuthHelper = SingleFactorAuthHelper.init()
         self.thresholdKeyHelper = ThresholdKeyHelper()
+        self.chainHelper = ChainHelper()
     }
     
     func login() {
@@ -69,8 +74,25 @@ class MainViewModel: ObservableObject {
                 
                 self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper)
                 try await attestationHelper.initialize()
+                try await chainHelper.setUp()
     
                 toogleIsLoggedIn()
+                loadAccount()
+            } catch let error {
+                print(error.localizedDescription)
+                showAlertDialog(alertContent: error.localizedDescription)
+            }
+        }
+    }
+    
+    private func loadAccount() {
+        Task {
+            do {
+                let balance = try await chainHelper.getBalance(address: erc4337Helper.address)
+                DispatchQueue.main.async {
+                    self.balance = balance
+                    self.isAccountReady.toggle()
+                }
             } catch let error {
                 print(error.localizedDescription)
                 showAlertDialog(alertContent: error.localizedDescription)

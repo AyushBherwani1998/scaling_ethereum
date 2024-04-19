@@ -57,6 +57,7 @@ struct PassKeyView: View {
             let reason = "Set up your passkeys for easier key management"
 
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                
                 // authentication has now completed
                 if success {
                     isUnlocked = true

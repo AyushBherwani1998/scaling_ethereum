@@ -36,6 +36,7 @@
 		284BE6BC2BC6AA290049C203 /* FetchNodeDetails in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6BB2BC6AA290049C203 /* FetchNodeDetails */; };
 		284BE6BE2BC6AA290049C203 /* FndBase in Frameworks */ = {isa = PBXBuildFile; productRef = 284BE6BD2BC6AA290049C203 /* FndBase */; };
 		284BE6C02BC6AB960049C203 /* KeychainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6BF2BC6AB960049C203 /* KeychainInterface.swift */; };
+		289671F22BCFCF74004F89CE /* ChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289671F12BCFCF74004F89CE /* ChainHelper.swift */; };
 		28C2DB082BC80B330096710A /* MPCSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2DB072BC80B330096710A /* MPCSigner.swift */; };
 		28C2DB382BC81AC20096710A /* Spec265KDep.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C2DB372BC81AC20096710A /* Spec265KDep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28C2DB3B2BC81AC20096710A /* Spec265KDep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2DB352BC81AC20096710A /* Spec265KDep.framework */; };
@@ -106,6 +107,7 @@
 		284BE6AA2BC698FD0049C203 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		284BE6AC2BC69A8A0049C203 /* SingelFactorAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingelFactorAuthHelper.swift; sourceTree = "<group>"; };
 		284BE6BF2BC6AB960049C203 /* KeychainInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainInterface.swift; sourceTree = "<group>"; };
+		289671F12BCFCF74004F89CE /* ChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainHelper.swift; sourceTree = "<group>"; };
 		28C2DB072BC80B330096710A /* MPCSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCSigner.swift; sourceTree = "<group>"; };
 		28C2DB352BC81AC20096710A /* Spec265KDep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spec265KDep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C2DB372BC81AC20096710A /* Spec265KDep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spec265KDep.h; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				282E582F2BCA76A300FF1DD9 /* ERC4337Helper.swift */,
 				282E58312BCA936300FF1DD9 /* AttestationHelper.swift */,
 				282E58342BCA94FA00FF1DD9 /* ABI.swift */,
+				289671F12BCFCF74004F89CE /* ChainHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				28C2DB082BC80B330096710A /* MPCSigner.swift in Sources */,
 				284BE6922BC690C50049C203 /* ThresholdKeyHelper.swift in Sources */,
 				282E58322BCA936300FF1DD9 /* AttestationHelper.swift in Sources */,
+				289671F22BCFCF74004F89CE /* ChainHelper.swift in Sources */,
 				284BE6C02BC6AB960049C203 /* KeychainInterface.swift in Sources */,
 				284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */,
 				284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */,

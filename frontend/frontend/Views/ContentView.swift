@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             if(viewModel.isLoggedIn) {
-                HomeView()
+                HomView(viewModel: viewModel)
             } else {
                 LoginView(viewModel: viewModel)
             }
