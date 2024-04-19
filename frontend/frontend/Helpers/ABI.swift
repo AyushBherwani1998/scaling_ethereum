@@ -12,6 +12,24 @@ class ABI {
     static public var MPCRECOVERYABI: String = """
     [
         {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "name": "attestMPCAccount",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
             "inputs": [],
             "stateMutability": "nonpayable",
             "type": "constructor"
@@ -85,19 +103,47 @@ class ABI {
             "type": "event"
         },
         {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "schemaId_",
+                    "type": "uint64"
+                }
+            ],
+            "name": "setSchemaID",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
             "inputs": [
                 {
                     "internalType": "address",
-                    "name": "recipient",
+                    "name": "instance",
                     "type": "address"
-                },
-                {
-                    "internalType": "bytes",
-                    "name": "data",
-                    "type": "bytes"
                 }
             ],
-            "name": "attestMPCAccount",
+            "name": "setSPInstance",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -123,9 +169,61 @@ class ABI {
             "name": "claimMPCAccount",
             "outputs": [
                 {
-                    "internalType": "bool",
+                    "components": [
+                        {
+                            "internalType": "uint64",
+                            "name": "schemaId",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "linkedAttestationId",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "attestTimestamp",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "revokeTimestamp",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "attester",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "validUntil",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "enum DataLocation",
+                            "name": "dataLocation",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "revoked",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bytes[]",
+                            "name": "recipients",
+                            "type": "bytes[]"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "data",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct Attestation",
                     "name": "",
-                    "type": "bool"
+                    "type": "tuple"
                 }
             ],
             "stateMutability": "view",
@@ -146,13 +244,6 @@ class ABI {
         },
         {
             "inputs": [],
-            "name": "renounceOwnership",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
             "name": "schemaId",
             "outputs": [
                 {
@@ -162,32 +253,6 @@ class ABI {
                 }
             ],
             "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "instance",
-                    "type": "address"
-                }
-            ],
-            "name": "setSPInstance",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint64",
-                    "name": "schemaId_",
-                    "type": "uint64"
-                }
-            ],
-            "name": "setSchemaID",
-            "outputs": [],
-            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -201,19 +266,6 @@ class ABI {
                 }
             ],
             "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "newOwner",
-                    "type": "address"
-                }
-            ],
-            "name": "transferOwnership",
-            "outputs": [],
-            "stateMutability": "nonpayable",
             "type": "function"
         }
     ]

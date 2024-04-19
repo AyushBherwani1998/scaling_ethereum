@@ -27,4 +27,57 @@ class ChainHelper {
         let ether = Decimal.init(string: balance.description)! / pow(10, 18)
         return ether
     }
+    
+    func getTransactionHistory(address: String) async throws -> [TransactionHistory] {
+        let (data, _) = try await URLSession.shared.data(
+            from: URL(
+                string:"https://api-sepolia.etherscan.io/api?module=account&action=txlistinternal&address=" + address + "&tstartblock=0&endblock=99999999&page=1&offset=10&sort=asc&apikey=YourApiKeyToken"
+            )!)
+        
+        let transactionHistory = try JSONDecoder().decode(
+            TransactionHistoryResponse.self, from: data
+        )
+        
+        return transactionHistory.result
+    
+    }
+}
+
+
+
+
+
+struct TransactionHistoryResponse: Codable {
+    let status, message: String
+    let result: [TransactionHistory]
+}
+
+struct TransactionHistory: Codable {
+    let timeStamp: String
+    let hash: String
+    let from: String
+    let value: String
+    let contractAddress: String
+    let type: TypeEnum
+    let isError: String
+    let errCode: String
+    
+    var isSuccessful: Bool {
+        return isError == "0"
+    }
+    
+    var isInitTransaction: Bool {
+        return type == TypeEnum.create2
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case timeStamp, hash, from, value, contractAddress, type
+        case isError, errCode
+    }
+}
+
+
+enum TypeEnum: String, Codable {
+    case call = "call"
+    case create2 = "create2"
 }

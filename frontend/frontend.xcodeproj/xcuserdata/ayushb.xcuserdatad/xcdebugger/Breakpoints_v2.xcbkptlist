@@ -7,69 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "234F7F96-23F4-40C0-8BDA-270E2DEC3B0F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "frontend/Models/MainViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "login()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "234F7F96-23F4-40C0-8BDA-270E2DEC3B0F - febe4c48a0b4cc6f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(15) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
-                  moduleName = "frontend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "304">
-               </Location>
-               <Location
-                  uuid = "234F7F96-23F4-40C0-8BDA-270E2DEC3B0F - f79ceb4e17211669"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(17) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
-                  moduleName = "frontend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "234F7F96-23F4-40C0-8BDA-270E2DEC3B0F - 6f81cf036e11cd6f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(24) suspend resume partial function for closure #1 @Sendable () async -&gt; () in frontend.MainViewModel.login() -&gt; ()"
-                  moduleName = "frontend"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Models/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "116">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E2F0C32E-2867-435B-BAF4-3CC098677258"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -77,8 +14,8 @@
             filePath = "frontend/Models/MainViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "login()"
             landmarkType = "7">
          </BreakpointContent>
@@ -93,8 +30,8 @@
             filePath = "frontend/Models/MainViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "login()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1181,7 +1118,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "attestMPCAccount(recipient:mpcAddress:)"
+            landmarkName = "attestMPCAccount(recipient:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1274,6 +1211,66 @@
                   endingLineNumber = "45"
                   offsetFromSymbolStart = "60">
                </Location>
+               <Location
+                  uuid = "82F40C2E-4D3C-4ABD-8F6C-68CD9588799F - 896c9bf149fe8a1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for frontend.AttestationHelper.attestMPCAccount(recipient: Swift.String) async throws -&gt; Swift.String"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Helpers/AttestationHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+               <Location
+                  uuid = "82F40C2E-4D3C-4ABD-8F6C-68CD9588799F - b469200f4c72e617"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for frontend.AttestationHelper.attestMPCAccount(recipient: Swift.String) async throws -&gt; Swift.String"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Helpers/AttestationHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "82F40C2E-4D3C-4ABD-8F6C-68CD9588799F - c72e58de915c4a19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for frontend.AttestationHelper.attestMPCAccount(recipient: Swift.String) async throws -&gt; Swift.String"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Helpers/AttestationHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "82F40C2E-4D3C-4ABD-8F6C-68CD9588799F - de8fbc9a2acdaa1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for frontend.AttestationHelper.attestMPCAccount(recipient: Swift.String) async throws -&gt; Swift.String"
+                  moduleName = "frontend"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushb/Work/projects/scaling_ethereum/frontend/frontend/Helpers/AttestationHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "52">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1321,7 +1318,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "claimMPCAccount(signer:)"
+            landmarkName = "claimMPCAccount(signer:salt:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1445,7 +1442,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "claimMPCAccount(signer:)"
+            landmarkName = "claimMPCAccount(signer:salt:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1602,8 +1599,8 @@
             filePath = "frontend/Models/MainViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "loadAccount()"
             landmarkType = "7">
          </BreakpointContent>

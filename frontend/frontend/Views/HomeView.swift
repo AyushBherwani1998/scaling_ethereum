@@ -30,7 +30,7 @@ struct HomView: View {
                         .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                     
                     
-                    Text(String(viewModel.balance.formatted(format: "%.3f")) + " ETH")
+                    Text(viewModel.balance.description + " ETH")
                         .font(.system(size:44))
                         .fontWeight(.semibold)
                     

@@ -11,6 +11,7 @@ import tkey_mpc_swift
 import CommonSources
 import FetchNodeDetails
 import Web3SwiftMpcProvider
+import CryptoSwift
 
 class ThresholdKeyHelper {
     var verifier: String!
@@ -125,6 +126,107 @@ class ThresholdKeyHelper {
         }
     }
     
+    func createAttestationFactor(salt: UInt) async throws {
+        let privateKey = try reconstructKeyFromAttestation(salt: salt)
+        try await saveNewTSSFactor(newFactorKey: privateKey)
+    }
+    
+    func recoverWithAttestation(salt: UInt) async throws {
+        let factorKey = try reconstructKeyFromAttestation(salt: salt)
+        try await thresholdKey.input_factor_key(factorKey: factorKey.hex)
+    
+        
+        guard let reconstructionDetails = try? await thresholdKey.reconstruct() else {
+            throw "Failed to reconstruct key with Attestation."
+        }
+        
+        
+        try await prepareEthTssAccout(factorKey: factorKey.hex)
+    }
+    
+    
+    private func reconstructKeyFromAttestation(salt: UInt) throws -> PrivateKey {
+        let pubKey = try thresholdKey.get_key_details().pub_key.getPublicKey(
+            format: .EllipticCompress
+        )
+        
+        var pubKeyBytes = pubKey.bytes
+        
+        withUnsafeBytes(of: salt.bigEndian) {
+            pubKeyBytes.append(contentsOf: $0)
+        }
+        
+        let hash = CryptoSwift.SHA3(variant: .keccak256
+        ).callAsFunction(pubKeyBytes).toHexString()
+        
+        return PrivateKey(hex: hash)
+    }
+    
+    private func saveNewTSSFactor(newFactorKey: PrivateKey) async throws {
+        do {
+            let newFactorPub = try newFactorKey.toPublic()
+            
+            // Use exising device factor to generate tss share with
+            // index 3 with new factor
+            let factorKey = activeFactor!
+            
+            let shareIndex = try await TssModule.find_device_share_index(
+                threshold_key: thresholdKey,
+                factor_key: factorKey
+            )
+            
+            try TssModule.backup_share_with_factor_key(
+                threshold_key: thresholdKey,
+                shareIndex: shareIndex,
+                factorKey: newFactorKey.hex
+            )
+            
+            // For now only tss index 2 and index 3 are supported.
+            //
+            // Index 2 is used device factor, and index 3 is used for
+            // recovery factor.
+            let tssShareIndex = Int32(3)
+            let sigs: [String] = try signatures.map {String(
+                decoding:
+                    try JSONSerialization.data(withJSONObject: $0), as: UTF8.self
+            )}
+            
+            let tag = try TssModule.get_tss_tag(threshold_key: thresholdKey)
+            
+            try await TssModule.add_factor_pub(
+                threshold_key: thresholdKey,
+                tss_tag: tag,
+                factor_key: factorKey,
+                auth_signatures: sigs,
+                new_factor_pub: newFactorPub,
+                new_tss_index: tssShareIndex,
+                nodeDetails: nodeDetails!,
+                torusUtils: torusUtils!
+            )
+            
+            let saveNewFactorId = newFactorPub
+            try KeychainInterface.save(item: newFactorKey.hex, key: saveNewFactorId)
+            
+            let description = [
+                "module": "Manual Backup",
+                "tssTag": tag,
+                "tssShareIndex": tssShareIndex,
+                "dateAdded": Date().timeIntervalSince1970
+            ] as [String: Codable]
+            
+            let jsonStr = try factorDescription(dataObj: description)
+            
+            try await thresholdKey.add_share_description(
+                key: newFactorPub,
+                description: jsonStr
+            )
+            
+            
+        } catch let error {
+            throw error
+        }
+    }
+    
     private func newUser() async throws {
         do {
             let factorKey = try PrivateKey.generate()
@@ -145,7 +247,7 @@ class ThresholdKeyHelper {
     
     private func existingUser() async throws {
         do {
-          
+            
             let metadataPublicKey = try keyDetails.pub_key.getPublicKey(
                 format: .EllipticCompress
             )
@@ -153,7 +255,7 @@ class ThresholdKeyHelper {
             guard let factorPub = UserDefaults.standard.string(
                 forKey: metadataPublicKey
             ) else {
-               
+                
                 throw RuntimeError("Failed to find device share.")
             }
             

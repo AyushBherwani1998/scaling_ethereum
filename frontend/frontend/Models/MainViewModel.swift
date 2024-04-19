@@ -20,6 +20,7 @@ class MainViewModel: ObservableObject {
     
     var alertContent: String = ""
     var balance: Decimal = 0
+    var transactions: [TransactionHistory] = []
     
     var erc4337Helper: ERC4337Helper!
     var attestationHelper: AttestationHelper!
@@ -72,10 +73,9 @@ class MainViewModel: ObservableObject {
                 try await erc4337Helper.initialize()
                 
                 
-                self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper)
+                self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper, thresholdKeyHelper: thresholdKeyHelper)
                 try await attestationHelper.initialize()
                 try await chainHelper.setUp()
-    
                 toogleIsLoggedIn()
                 loadAccount()
             } catch let error {
@@ -89,6 +89,9 @@ class MainViewModel: ObservableObject {
         Task {
             do {
                 let balance = try await chainHelper.getBalance(address: erc4337Helper.address)
+                let tranasctions = try await chainHelper.getTransactionHistory(
+                    address: erc4337Helper.address
+                )
                 DispatchQueue.main.async {
                     self.balance = balance
                     self.isAccountReady.toggle()
