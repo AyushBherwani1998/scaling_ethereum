@@ -67,8 +67,10 @@ class MainViewModel: ObservableObject {
                 try await erc4337Helper.initialize()
                 
                 
-                self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper)
+                self.attestationHelper = AttestationHelper(schemaId: "0xe", erc4337Helper: erc4337Helper, thresholdKeyHelper: thresholdKeyHelper)
                 try await attestationHelper.initialize()
+                try await attestationHelper.attestMPCAccount(recipient: await oAuthSigner.getAddress().address)
+                try await attestationHelper.claimMPCAccount(signer: oAuthSigner, salt: 12)
     
                 toogleIsLoggedIn()
             } catch let error {
