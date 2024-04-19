@@ -6,14 +6,49 @@
 //
 
 import SwiftUI
+import SimpleToast
+import CodeScanner
+
+
 
 let address="0xcc89B59D28A2d63fD9134f9d843547942747b40f"
 let result = address.split(separator: "")
 let suffixAddress=result[38]+result[39]+result[40]+result[41]
 let prefixAddress=result[0]+result[1]+result[2]+result[3]
 
+private let toastOptions = SimpleToastOptions(
+    alignment: .top,
+    hideAfter: 8,
+    backdrop: Color.black.opacity(0.3),
+    animation: .default,
+    modifierType: .slide
+    
+)
+
 struct HomView: View {
     @StateObject var viewModel: MainViewModel
+    @State private var attestCode = "44"
+    
+    @State private var showToast = false
+    @State var toastStr = "None"
+    
+    @State var isPresentingScanner = false
+    @State private var scannedCode: String = ""
+    
+    var scannerSheet: some View {
+        CodeScannerView(
+            codeTypes: [.qr],
+            completion: { result in // Added missing "in" keyword
+                if case let .success(code) = result {
+                    // Handle scanned code here
+                    self.scannedCode = "\(code)"
+                    self.isPresentingScanner = false
+                }
+            }
+        )
+    }
+    
+    
     var body: some View {
         
         if !viewModel.isAccountReady {
@@ -62,6 +97,10 @@ struct HomView: View {
                         }
                         .padding()
                     Button{
+                        
+                        showToast.toggle()
+                        toastStr="Your address is copied to the clipboard"
+                        
                     } label: {
                         VStack{
                             Image(systemName: "arrow.down.circle")
@@ -83,6 +122,9 @@ struct HomView: View {
                     .padding()
                     
                     Button{
+                        
+                        self.isPresentingScanner = true
+
                     } label: {
                         VStack{
                             Image(systemName: "qrcode")
@@ -101,9 +143,15 @@ struct HomView: View {
                                 .font(.system(size:13))
                         }
                     }
+                .sheet(isPresented: $isPresentingScanner){
+                    self.scannerSheet
+                    }
                     .padding()
                     
                     Button{
+                        showToast.toggle()
+                        toastStr = "Your wallet attestation code is " + attestCode
+                        
                     } label: {
                         VStack{
                             Image(systemName: "plus.viewfinder")
@@ -147,6 +195,13 @@ struct HomView: View {
                 
                 
             }
+            .simpleToast(isPresented: $showToast, options: toastOptions){
+                Text(toastStr)
+                    .padding(20)
+                    .frame(maxWidth: 358)
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(14)
         }
     }
 }

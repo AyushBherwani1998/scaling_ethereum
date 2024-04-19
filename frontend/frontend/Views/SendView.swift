@@ -7,15 +7,28 @@
 
 import SwiftUI
 import UIKit
+import SimpleToast
+
 
 struct GasPrice: Decodable {
     var result: String
 }
 
+private let toastOptions = SimpleToastOptions(
+    alignment: .top,
+    hideAfter: 3,
+    backdrop: Color.black.opacity(0.3),
+    animation: .default,
+    modifierType: .slide
+    
+)
+
 struct SendView: View {
     @State var SenderAddress = ""
     @State var EthAmt = ""
     @State var Gas = "0.00"
+    @State private var showToast = false
+    @State private var txnState = true
 
     var body: some View {
         
@@ -71,7 +84,9 @@ struct SendView: View {
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             
             Button {
-                // auth goes here
+                if txnState{
+                    showToast.toggle()
+                }
             } label: {
                 Text("Send ETH")
                     .frame(maxWidth: .infinity)
@@ -84,6 +99,14 @@ struct SendView: View {
         
             
         }
+        .simpleToast(isPresented: $showToast, options: toastOptions){
+            Text("Transaction submitted successfully")
+                .padding(20)
+                .background(Color.green)
+                .foregroundColor(Color.black)
+                .cornerRadius(14)
+        }
+            
         .padding()
         .onAppear{
             Task {

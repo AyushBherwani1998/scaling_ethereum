@@ -1,4 +1,5 @@
 {
+  "originHash" : "aa6316ed2f1dacd7ca9a0f47afa3a55c5b6478b54ccf31db414167cac65beaf8",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -43,6 +44,15 @@
       "state" : {
         "revision" : "0ed110f7555c34ff468e72e1686e59721f2b0da6",
         "version" : "5.3.0"
+      }
+    },
+    {
+      "identity" : "codescanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/CodeScanner",
+      "state" : {
+        "revision" : "944a6a1ca030dbd890e647a678e718fc2115d35c",
+        "version" : "2.4.1"
       }
     },
     {
@@ -214,6 +224,15 @@
       "state" : {
         "revision" : "c89d9205a1ce38cd6c6374b906a9039d9cc03f05",
         "version" : "3.1.1"
+      }
+    },
+    {
+      "identity" : "simpletoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sanzaru/SimpleToast",
+      "state" : {
+        "revision" : "8dbc2e7c33cda25c0b2efafd59716cb9820c83eb",
+        "version" : "0.8.1"
       }
     },
     {
@@ -415,5 +434,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

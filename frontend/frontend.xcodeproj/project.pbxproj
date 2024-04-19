@@ -44,6 +44,7 @@
 		28C2DB3C2BC81AC20096710A /* Spec265KDep.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28C2DB352BC81AC20096710A /* Spec265KDep.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74D2F0AA2BCEEC3400B4C17B /* PassKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */; };
 		74D2F0B12BD2D64100B4C17B /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0B02BD2D64100B4C17B /* SendView.swift */; };
+		74D2F0BE2BD309BF00B4C17B /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0BD2BD309BF00B4C17B /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		28C2DB372BC81AC20096710A /* Spec265KDep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spec265KDep.h; sourceTree = "<group>"; };
 		74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassKeyView.swift; sourceTree = "<group>"; };
 		74D2F0B02BD2D64100B4C17B /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
+		74D2F0BD2BD309BF00B4C17B /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				284BE6AA2BC698FD0049C203 /* HomeView.swift */,
 				2833BEAE2BD2790500243B09 /* RecoveryView.swift */,
 				74D2F0B02BD2D64100B4C17B /* SendView.swift */,
+				74D2F0BD2BD309BF00B4C17B /* LoaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -421,6 +424,8 @@
 				284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */,
 				282E58242BC99A4200FF1DD9 /* XCRemoteSwiftPackageReference "web3-swift-mpc-provider" */,
 				282E582C2BCA746400FF1DD9 /* XCRemoteSwiftPackageReference "userop-swift" */,
+				74D2F0B22BD2E25D00B4C17B /* XCRemoteSwiftPackageReference "SimpleToast" */,
+				74D2F0BA2BD2FFA900B4C17B /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 284BE6642BC6903A0049C203 /* Products */;
 			projectDirPath = "";
@@ -490,6 +495,7 @@
 				284BE6AB2BC698FD0049C203 /* HomeView.swift in Sources */,
 				284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */,
 				2833BEAF2BD2790500243B09 /* RecoveryView.swift in Sources */,
+				74D2F0BE2BD309BF00B4C17B /* LoaderView.swift in Sources */,
 				284BE6A62BC696F10049C203 /* MainViewModel.swift in Sources */,
 				284BE6AD2BC69A8A0049C203 /* SingelFactorAuthHelper.swift in Sources */,
 			);
@@ -671,12 +677,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = frontend/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID for resolving Passkey";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,12 +710,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = frontend/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID for resolving Passkey";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -976,6 +986,22 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.1.0;
+			};
+		};
+		74D2F0B22BD2E25D00B4C17B /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		74D2F0BA2BD2FFA900B4C17B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

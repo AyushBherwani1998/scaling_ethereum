@@ -14,22 +14,39 @@ struct RecoveryView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(
-                    header: Text("MPC Account Recovery")
-                ) {
-                    TextField(
-                        "Please enter your attestation number",
-                        text: $attestation
-                    )
+                
+                VStack(alignment: .leading){
+                    Text("Enter your attestation code")
+                        .font(.title2)
+                    HStack{
+                        TextField("0000", text: $attestation)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .keyboardType(.numberPad)
+                            .font(.system(size: 56))
+                            .padding(.trailing,12)
+                        
+                        
+                    }
+                    Spacer()
                     
-                    Button(
-                        action: {
-                            viewModel.claimAccount(salt: attestation)
-                        }, label: {
-                            Text("Claim Account")
-                        }
-                    )
+                    Button {
+                        viewModel.claimAccount(salt: attestation)
+                    } label: {
+                        Text("Claim attestation")
+                            .frame(maxWidth: .infinity)
+                            .fontWeight(.semibold)
+                            .padding(2)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.large)
                 }
+                .padding(.top, 16)
+                .padding(.bottom,56)
+                .padding(.leading)
+                .padding(.trailing)
+          
+            }
+    
             }
         }
         
