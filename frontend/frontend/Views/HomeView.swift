@@ -41,50 +41,86 @@ struct HomView: View {
                 
                 HStack{
                     
+                        Button{
+                        } label: {
+                            VStack{
+                                Image(systemName: "arrow.up.circle")
+                                    .resizable()
+                                    .frame(width: 32, height: 32)
+                                    .padding(.bottom, 2)
+                                    .padding(.top, 4)
+                                    .foregroundStyle(.white)
+                                    .frame( maxWidth: 56,maxHeight: 56)
+                                    .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
+                                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
+
+                                Text("Send")
+                                    .foregroundStyle(.white)
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .font(.system(size:13))
+                            }
+                        }
+                        .padding()
                     Button{
                     } label: {
                         VStack{
-                            Image(systemName: "arrow.uturn.up.circle.fill")
+                            Image(systemName: "arrow.down.circle")
                                 .resizable()
-                                .frame(width: 20, height: 20)
+                                .frame(width: 32, height: 32)
                                 .padding(.bottom, 2)
                                 .padding(.top, 4)
-                            Text("Send")
-                            
+                                .foregroundStyle(.white)
+                                .frame( maxWidth: 56,maxHeight: 56)
+                                .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
+                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
+
+                            Text("Recieve")
+                                .foregroundStyle(.white)
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .font(.system(size:13))
                         }
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity, maxHeight: 72)
-                        
-                        .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        
-                        
                     }
                     .padding()
+                    
                     Button{
                     } label: {
                         VStack{
-                            Image(systemName: "arrow.uturn.down.circle.fill")
+                            Image(systemName: "qrcode")
                                 .resizable()
-                                .frame(width: 20, height: 20)
+                                .frame(width: 24, height: 24)
                                 .padding(.bottom, 2)
                                 .padding(.top, 4)
-                            Text("Receive")
-                            
+                                .foregroundStyle(.white)
+                                .frame( maxWidth: 56,maxHeight: 56)
+                                .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
+                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
+
+                            Text("Wallet Connect")
+                                .foregroundStyle(.white)
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .font(.system(size:13))
                         }
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity, maxHeight: 72)
-                        
-                        .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
-                                            .border(Color.red)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        
+                    }
+                    .padding()
+                    
+                    Button{
+                    } label: {
+                        VStack{
+                            Image(systemName: "plus.viewfinder")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .padding(.bottom, 2)
+                                .padding(.top, 4)
+                                .foregroundStyle(.white)
+                                .frame( maxWidth: 56,maxHeight: 56)
+                                .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
+                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
+
+                            Text("Attest device")
+                                .foregroundStyle(.white)
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .font(.system(size:13))
+                        }
                     }
                     .padding()
                 }
