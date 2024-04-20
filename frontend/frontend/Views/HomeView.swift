@@ -41,7 +41,7 @@ struct HomView: View {
             codeTypes: [.qr],
             completion: { result in
                 if case let .success(code) = result {
-             
+                    
                     self.scannedCode = "\(code)"
                     self.isPresentingScanner = false
                     self.isShowingBottomSheet = true
@@ -72,32 +72,32 @@ struct HomView: View {
                     .padding(.bottom, 4).font(Font.title)
                     
                     
-                  
+                    
                     
                 }
                 
                 HStack{
                     
-                        Button{
-                        } label: {
-                            VStack{
-                                Image(systemName: "arrow.up.circle")
-                                    .resizable()
-                                    .frame(width: 32, height: 32)
-                                    .padding(.bottom, 2)
-                                    .padding(.top, 4)
-                                    .foregroundStyle(.white)
-                                    .frame( maxWidth: 56,maxHeight: 56)
-                                    .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
-                                    .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
-
-                                Text("Send")
-                                    .foregroundStyle(.white)
-                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                                    .font(.system(size:13))
-                            }
+                    Button{
+                    } label: {
+                        VStack{
+                            Image(systemName: "arrow.up.circle")
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .padding(.bottom, 2)
+                                .padding(.top, 4)
+                                .foregroundStyle(.white)
+                                .frame( maxWidth: 56,maxHeight: 56)
+                                .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
+                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
+                            
+                            Text("Send")
+                                .foregroundStyle(.white)
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .font(.system(size:13))
                         }
-                        .padding()
+                    }
+                    .padding()
                     Button{
                         
                         showToast.toggle()
@@ -114,7 +114,7 @@ struct HomView: View {
                                 .frame( maxWidth: 56,maxHeight: 56)
                                 .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
-
+                            
                             Text("Recieve")
                                 .foregroundStyle(.white)
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -126,7 +126,7 @@ struct HomView: View {
                     Button{
                         
                         self.isPresentingScanner = true
-
+                        
                     } label: {
                         VStack{
                             Image(systemName: "qrcode")
@@ -138,14 +138,14 @@ struct HomView: View {
                                 .frame( maxWidth: 56,maxHeight: 56)
                                 .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
-
+                            
                             Text("Wallet Connect")
                                 .foregroundStyle(.white)
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                 .font(.system(size:13))
                         }
                     }
-                
+                    
                     .sheet(isPresented: $isShowingBottomSheet){
                         VStack{
                             
@@ -154,13 +154,13 @@ struct HomView: View {
                                 .font(.system(size: 32))
                                 .padding(.bottom,32)
                                 .fontWeight(.semibold)
-                           
+                            
                             HStack{
                                 Text("Protocol Name")
                                 Spacer()
                                 Text("Uniswap")
                             }.padding(.bottom,24)
-                           
+                            
                             HStack{
                                 Text("URL")
                                 Spacer()
@@ -192,7 +192,7 @@ struct HomView: View {
                             
                         }
                         .padding()
-                       
+                        
                         
                     }
                     .sheet(isPresented: $isPresentingScanner){
@@ -216,7 +216,7 @@ struct HomView: View {
                                 .frame( maxWidth: 56,maxHeight: 56)
                                 .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 36, height: 36)))
-
+                            
                             Text("Attest device")
                                 .foregroundStyle(.white)
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -235,6 +235,33 @@ struct HomView: View {
                     .padding()
                 
                 VStack{
+                    
+                    //Transaction logic to be added
+                    
+                        HStack(spacing: 20){
+                            Image(systemName:"checkmark.circle.fill")
+                                .font(.system(size: 36))
+                                .foregroundColor(.green)
+                            VStack(spacing: 4){
+                                Text("Device attestation")
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                                
+                                Text("0x..231")
+                                    .font(.subheadline)
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                                
+                                
+                            }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                        
+                    }
+                    .padding(16)
+                    
+                    .background(Color(red: 54 / 255, green: 54 / 255, blue: 56 / 255))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    
+                    
                     Text("You don't have any new transactions")
                         .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                     
@@ -255,6 +282,7 @@ struct HomView: View {
                     .background(Color.blue)
                     .foregroundColor(Color.white)
                     .cornerRadius(14)
+            }
         }
     }
 }

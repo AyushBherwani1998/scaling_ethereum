@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-import UIKit
 import SimpleToast
+import UIKit
+
 
 
 struct GasPrice: Decodable {
@@ -105,6 +106,7 @@ struct SendView: View {
                 .background(Color.green)
                 .foregroundColor(Color.black)
                 .cornerRadius(14)
+                .frame(maxWidth: .infinity)
         }
             
         .padding()

@@ -45,6 +45,8 @@
 		74D2F0AA2BCEEC3400B4C17B /* PassKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0A92BCEEC3400B4C17B /* PassKeyView.swift */; };
 		74D2F0B12BD2D64100B4C17B /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0B02BD2D64100B4C17B /* SendView.swift */; };
 		74D2F0BE2BD309BF00B4C17B /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D2F0BD2BD309BF00B4C17B /* LoaderView.swift */; };
+		74D2F0C02BD3EB0600B4C17B /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 74D2F0BF2BD3EB0600B4C17B /* SimpleToast */; };
+		74D2F0C22BD3EBFC00B4C17B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 74D2F0C12BD3EBFC00B4C17B /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,8 @@
 				284BE6B32BC69AF30049C203 /* TorusUtils in Frameworks */,
 				284BE6BE2BC6AA290049C203 /* FndBase in Frameworks */,
 				284BE6B62BC6A7C30049C203 /* tkey-mpc-swift in Frameworks */,
+				74D2F0C22BD3EBFC00B4C17B /* CodeScanner in Frameworks */,
+				74D2F0C02BD3EB0600B4C17B /* SimpleToast in Frameworks */,
 				284BE6B02BC69AC30049C203 /* SingleFactorAuth in Frameworks */,
 				284BE6972BC692490049C203 /* FirebaseAuth in Frameworks */,
 				284BE69F2BC693D40049C203 /* GoogleSignIn in Frameworks */,
@@ -317,6 +321,8 @@
 				284BE6B52BC6A7C30049C203 /* tkey-mpc-swift */,
 				284BE6BB2BC6AA290049C203 /* FetchNodeDetails */,
 				284BE6BD2BC6AA290049C203 /* FndBase */,
+				74D2F0BF2BD3EB0600B4C17B /* SimpleToast */,
+				74D2F0C12BD3EBFC00B4C17B /* CodeScanner */,
 			);
 			productName = frontend;
 			productReference = 284BE6632BC6903A0049C203 /* frontend.app */;
@@ -1051,6 +1057,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */;
 			productName = FndBase;
+		};
+		74D2F0BF2BD3EB0600B4C17B /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74D2F0B22BD2E25D00B4C17B /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+		74D2F0C12BD3EBFC00B4C17B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74D2F0BA2BD2FFA900B4C17B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
