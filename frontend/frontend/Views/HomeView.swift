@@ -33,16 +33,18 @@ struct HomView: View {
     @State var toastStr = "None"
     
     @State var isPresentingScanner = false
+    @State var isShowingBottomSheet = false
     @State private var scannedCode: String = ""
     
     var scannerSheet: some View {
         CodeScannerView(
             codeTypes: [.qr],
-            completion: { result in // Added missing "in" keyword
+            completion: { result in
                 if case let .success(code) = result {
-                    // Handle scanned code here
+             
                     self.scannedCode = "\(code)"
                     self.isPresentingScanner = false
+                    self.isShowingBottomSheet = true
                 }
             }
         )
@@ -143,9 +145,60 @@ struct HomView: View {
                                 .font(.system(size:13))
                         }
                     }
-                .sheet(isPresented: $isPresentingScanner){
-                    self.scannerSheet
+                
+                    .sheet(isPresented: $isShowingBottomSheet){
+                        VStack{
+                            
+                            Text("Connecting to")
+                                .padding(.top,32)
+                                .font(.system(size: 32))
+                                .padding(.bottom,32)
+                                .fontWeight(.semibold)
+                           
+                            HStack{
+                                Text("Protocol Name")
+                                Spacer()
+                                Text("Uniswap")
+                            }.padding(.bottom,24)
+                           
+                            HStack{
+                                Text("URL")
+                                Spacer()
+                                Text("www.uniswap.com")
+                            }.padding(.bottom,24)
+                            
+                            HStack{
+                                Text("Chains")
+                                Spacer()
+                                Text("Sepolia")
+                            }.padding(.bottom,24)
+                            
+                            Spacer()
+                            
+                            Button {
+                                //Wallet connect goes here
+                                showToast.toggle()
+                                toastStr = "Wallet Connected"
+                                self.isShowingBottomSheet = false
+                                
+                            } label: {
+                                Text("Connect")
+                                    .frame(maxWidth: .infinity)
+                                    .fontWeight(.semibold)
+                                    .padding(2)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.large)
+                            
+                        }
+                        .padding()
+                       
+                        
                     }
+                    .sheet(isPresented: $isPresentingScanner){
+                        self.scannerSheet
+                    }
+                    
                     .padding()
                     
                     Button{
