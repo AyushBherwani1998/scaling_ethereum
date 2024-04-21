@@ -29,8 +29,9 @@ class AttestationHelper {
     }
     
     
-    func attestMPCAccount(recipient: String) async throws -> String {
-        let schemaData = try ABIEncoder.abiEncode([12])
+    func attestMPCAccount(recipient: String) async throws -> (String, UInt) {
+        let randomSalt = UInt.random(in: 0..<9999)
+        let schemaData = try ABIEncoder.abiEncode([randomSalt])
         
         guard let data = ispContract.method(
             "attestMPCAccount",
@@ -51,8 +52,8 @@ class AttestationHelper {
             throw "ERC4337 Account not found"
         }
         
-        try await thresholdKeyHelper.createAttestationFactor(salt: 12)
-        return hash
+        try await thresholdKeyHelper.createAttestationFactor(salt: randomSalt)
+        return (hash, randomSalt)
     }
     
     func claimMPCAccount(signer: Signer, salt: UInt) async throws {

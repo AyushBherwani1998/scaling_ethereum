@@ -14,7 +14,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
   ) -> Bool {
     FirebaseApp.configure()
-
+    UIApplication.shared.delegate?.window??.overrideUserInterfaceStyle = .dark
     return true
   }
 }
@@ -22,8 +22,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct frontendApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
+       
         WindowGroup {
+            
             ContentView(viewModel: MainViewModel())
         }
     }

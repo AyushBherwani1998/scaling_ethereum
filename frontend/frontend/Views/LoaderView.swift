@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoaderView: View {
     @State private var isLoading = false
-    @State var loadingMessage = "None"
+    @Binding var loadingMessage: String
        
        var body: some View {
            VStack {
@@ -31,10 +31,6 @@ struct LoaderView: View {
 
    struct ContentView_Previews: PreviewProvider {
        static var previews: some View {
-           ContentView()
+           ContentView(viewModel: MainViewModel())
        }
    }
-
-#Preview {
-    LoaderView()
-}

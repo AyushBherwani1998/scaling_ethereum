@@ -14,6 +14,9 @@
 		282E58322BCA936300FF1DD9 /* AttestationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E58312BCA936300FF1DD9 /* AttestationHelper.swift */; };
 		282E58352BCA94FA00FF1DD9 /* ABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E58342BCA94FA00FF1DD9 /* ABI.swift */; };
 		2833BEAF2BD2790500243B09 /* RecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833BEAE2BD2790500243B09 /* RecoveryView.swift */; };
+		2833BED42BD3C26700243B09 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2833BED32BD3C26700243B09 /* SimpleToast */; };
+		2833BED72BD3F5D200243B09 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 2833BED62BD3F5D200243B09 /* CodeScanner */; };
+		2833BED92BD4068F00243B09 /* CurvegridHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833BED82BD4068F00243B09 /* CurvegridHelper.swift */; };
 		284BE6672BC6903A0049C203 /* frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6662BC6903A0049C203 /* frontendApp.swift */; };
 		284BE6692BC6903A0049C203 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284BE6682BC6903A0049C203 /* ContentView.swift */; };
 		284BE66B2BC6903C0049C203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284BE66A2BC6903C0049C203 /* Assets.xcassets */; };
@@ -91,6 +94,7 @@
 		282E58312BCA936300FF1DD9 /* AttestationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationHelper.swift; sourceTree = "<group>"; };
 		282E58342BCA94FA00FF1DD9 /* ABI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABI.swift; sourceTree = "<group>"; };
 		2833BEAE2BD2790500243B09 /* RecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryView.swift; sourceTree = "<group>"; };
+		2833BED82BD4068F00243B09 /* CurvegridHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvegridHelper.swift; sourceTree = "<group>"; };
 		284BE6632BC6903A0049C203 /* frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284BE6662BC6903A0049C203 /* frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendApp.swift; sourceTree = "<group>"; };
 		284BE6682BC6903A0049C203 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				284BE6B32BC69AF30049C203 /* TorusUtils in Frameworks */,
 				284BE6BE2BC6AA290049C203 /* FndBase in Frameworks */,
 				284BE6B62BC6A7C30049C203 /* tkey-mpc-swift in Frameworks */,
+				2833BED72BD3F5D200243B09 /* CodeScanner in Frameworks */,
+				2833BED42BD3C26700243B09 /* SimpleToast in Frameworks */,
 				284BE6B02BC69AC30049C203 /* SingleFactorAuth in Frameworks */,
 				284BE6972BC692490049C203 /* FirebaseAuth in Frameworks */,
 				284BE69F2BC693D40049C203 /* GoogleSignIn in Frameworks */,
@@ -239,6 +245,7 @@
 				282E58312BCA936300FF1DD9 /* AttestationHelper.swift */,
 				282E58342BCA94FA00FF1DD9 /* ABI.swift */,
 				289671F12BCFCF74004F89CE /* ChainHelper.swift */,
+				2833BED82BD4068F00243B09 /* CurvegridHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -317,6 +324,8 @@
 				284BE6B52BC6A7C30049C203 /* tkey-mpc-swift */,
 				284BE6BB2BC6AA290049C203 /* FetchNodeDetails */,
 				284BE6BD2BC6AA290049C203 /* FndBase */,
+				2833BED32BD3C26700243B09 /* SimpleToast */,
+				2833BED62BD3F5D200243B09 /* CodeScanner */,
 			);
 			productName = frontend;
 			productReference = 284BE6632BC6903A0049C203 /* frontend.app */;
@@ -424,8 +433,8 @@
 				284BE6BA2BC6AA290049C203 /* XCRemoteSwiftPackageReference "fetch-node-details-swift" */,
 				282E58242BC99A4200FF1DD9 /* XCRemoteSwiftPackageReference "web3-swift-mpc-provider" */,
 				282E582C2BCA746400FF1DD9 /* XCRemoteSwiftPackageReference "userop-swift" */,
-				74D2F0B22BD2E25D00B4C17B /* XCRemoteSwiftPackageReference "SimpleToast" */,
-				74D2F0BA2BD2FFA900B4C17B /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				2833BED22BD3C26700243B09 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+				2833BED52BD3F5D200243B09 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 284BE6642BC6903A0049C203 /* Products */;
 			projectDirPath = "";
@@ -480,6 +489,7 @@
 			files = (
 				284BE6A12BC6940B0049C203 /* FirebaseHelper.swift in Sources */,
 				284BE6A92BC698C00049C203 /* LoginView.swift in Sources */,
+				2833BED92BD4068F00243B09 /* CurvegridHelper.swift in Sources */,
 				282E58302BCA76A300FF1DD9 /* ERC4337Helper.swift in Sources */,
 				284BE6A32BC694E70049C203 /* Errors.swift in Sources */,
 				282E58352BCA94FA00FF1DD9 /* ABI.swift in Sources */,
@@ -684,7 +694,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,7 +727,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -940,6 +950,22 @@
 				kind = branch;
 			};
 		};
+		2833BED22BD3C26700243B09 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		2833BED52BD3F5D200243B09 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
 		284BE6952BC692490049C203 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -988,22 +1014,6 @@
 				minimumVersion = 5.1.0;
 			};
 		};
-		74D2F0B22BD2E25D00B4C17B /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sanzaru/SimpleToast";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.8.1;
-			};
-		};
-		74D2F0BA2BD2FFA900B4C17B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/CodeScanner";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.4.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1016,6 +1026,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 282E582C2BCA746400FF1DD9 /* XCRemoteSwiftPackageReference "userop-swift" */;
 			productName = "userop-swift";
+		};
+		2833BED32BD3C26700243B09 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2833BED22BD3C26700243B09 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+		2833BED62BD3F5D200243B09 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2833BED52BD3F5D200243B09 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 		284BE6962BC692490049C203 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

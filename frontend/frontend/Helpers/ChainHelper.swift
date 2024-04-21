@@ -28,6 +28,15 @@ class ChainHelper {
         return ether
     }
     
+    func getGasPrice() async throws -> String {
+        let (data, _) = try await URLSession.shared.data(
+            from: URL(
+                string:"https://api-sepolia.etherscan.io/api?module=proxy&action=eth_estimateGas&data=0x60fe47b10000000000000000000000000000000000000000000000000000000000000004&to=0x272c31fC25E4e609CbCC9E7a9e6171b4B39feAca&value=0x0&gasPrice=0x51da038cc&gas=0x186A0&apikey=NMDU6G1SBPRCYCA2HHNH6AV6JE5RWCIG55"
+            )!)
+        let decodedResponse = try JSONDecoder().decode(GasPrice.self, from: data)
+        return decodedResponse.result
+    }
+    
     func getTransactionHistory(address: String) async throws -> [TransactionHistory] {
         let (data, _) = try await URLSession.shared.data(
             from: URL(
@@ -44,6 +53,9 @@ class ChainHelper {
 }
 
 
+struct GasPrice: Decodable {
+    var result: String
+}
 
 
 
@@ -52,7 +64,7 @@ struct TransactionHistoryResponse: Codable {
     let result: [TransactionHistory]
 }
 
-struct TransactionHistory: Codable {
+struct TransactionHistory: Codable, Hashable {
     let timeStamp: String
     let hash: String
     let from: String
@@ -69,6 +81,13 @@ struct TransactionHistory: Codable {
     var isInitTransaction: Bool {
         return type == TypeEnum.create2
     }
+    
+    var name: String {
+        if(isInitTransaction) {
+            return "Create ERC4337 Wallet"
+        }
+        return "Handle Ops"
+    }
 
     enum CodingKeys: String, CodingKey {
         case timeStamp, hash, from, value, contractAddress, type
@@ -77,7 +96,7 @@ struct TransactionHistory: Codable {
 }
 
 
-enum TypeEnum: String, Codable {
+enum TypeEnum: String, Codable, Hashable {
     case call = "call"
     case create2 = "create2"
 }

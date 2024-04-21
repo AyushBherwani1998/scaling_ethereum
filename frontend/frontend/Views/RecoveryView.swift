@@ -24,15 +24,14 @@ struct RecoveryView: View {
                             .keyboardType(.numberPad)
                             .font(.system(size: 56))
                             .padding(.trailing,12)
-                        
-                        
                     }
+                    
                     Spacer()
                     
                     Button {
                         viewModel.claimAccount(salt: attestation)
                     } label: {
-                        Text("Claim attestation")
+                        Text("Claim MPC Account")
                             .frame(maxWidth: .infinity)
                             .fontWeight(.semibold)
                             .padding(2)
@@ -44,11 +43,12 @@ struct RecoveryView: View {
                 .padding(.bottom,56)
                 .padding(.leading)
                 .padding(.trailing)
-          
+                
             }
-    
-            }
-        }
-        
+            
+        }.alert(isPresented: $viewModel.showAlert, content: {
+            Alert(title: Text(viewModel.alertContent))
+        })
     }
+    
 }

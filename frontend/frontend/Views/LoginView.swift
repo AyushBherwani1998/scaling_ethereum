@@ -13,7 +13,7 @@ struct LoginView: View {
     var body: some View {
         VStack{
             Spacer()
-            Image("sage-logo")
+            Image("sage-logo").resizable().frame(width: 128, height: 71.27)
             Spacer()
             
             
@@ -28,8 +28,12 @@ struct LoginView: View {
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
             
-        }
-        .padding()
+        }.padding().alert(
+            isPresented: $viewModel.showAlert,
+            content: {
+                Alert(title: Text(viewModel.alertContent))
+            }
+        )
     }
 }
 
