@@ -97,8 +97,8 @@ class MainViewModel: ObservableObject {
             privateKey: torusKey.finalKeyData!.privKey!.web3.hexData!,
             ethereumTssAccount: thresholdKeyHelper.ethereumAccount,
             tssUncompressedPublicKey: thresholdKeyHelper.publicKey,
-            isUsingTssSignature: false,
-            isAccountCreated: true
+            isUsingTssSignature: true,
+            isAccountCreated: false
         )
         
         
