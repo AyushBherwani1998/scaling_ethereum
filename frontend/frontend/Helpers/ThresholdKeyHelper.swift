@@ -29,6 +29,7 @@ class ThresholdKeyHelper {
     var ethereumAccount: EthereumTssAccount!
     var activeFactor: String!
     var publicKey: String!
+    var isNewUser: Bool!
     
     func retriveMPCAccount(torusKey: TorusKey, verifierId: String, idToken: String) async throws {
         do {
@@ -114,7 +115,9 @@ class ThresholdKeyHelper {
             threshold = Int(keyDetails.threshold)
             requiredShares = Int(keyDetails.required_shares)
             
-            if(requiredShares > 0) {
+            isNewUser = requiredShares == 0
+            
+            if(!isNewUser) {
                 try await existingUser()
             } else {
                 try await newUser()
@@ -140,6 +143,7 @@ class ThresholdKeyHelper {
             throw "Failed to reconstruct key with Attestation."
         }
         
+        activeFactor = factorKey.hex
         
         try await prepareEthTssAccout(factorKey: factorKey.hex)
     }

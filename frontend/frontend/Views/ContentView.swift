@@ -13,7 +13,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             if(viewModel.isLoggedIn) {
-                HomeView()
+                HomView(viewModel: viewModel)
+            } else if(viewModel.isRecoveryRequired) {
+                RecoveryView(viewModel: viewModel)
+            } else if(viewModel.isLoaderVisible) {
+                LoaderView(loadingMessage: $viewModel.loaderText)
             } else {
                 LoginView(viewModel: viewModel)
             }
@@ -21,5 +25,9 @@ struct ContentView: View {
             viewModel.initialize()
         }
     }
+}
+
+#Preview {
+    ContentView(viewModel: MainViewModel())
 }
 
